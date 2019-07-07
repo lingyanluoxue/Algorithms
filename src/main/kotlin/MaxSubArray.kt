@@ -2,7 +2,8 @@ fun main(args: Array<String>) {
     val nums = args.map {
         it.toInt()
     }.toIntArray()
-    print(maxSubArray(nums))
+    println(maxSubArray(nums))
+    print(maxSubArray(intArrayOf(1)))
 }
 
 /**
@@ -20,11 +21,11 @@ fun main(args: Array<String>) {
 fun maxSubArray(nums: IntArray): Int {
     var sum = nums[0]
     var max = nums[0]
-    nums.forEach {
+    for (index in 1 until nums.size) {
         sum = if (sum > 0) {
-            sum + it
+            sum + nums[index]
         } else {
-            it
+            nums[index]
         }
         if (sum > max) {
             max = sum

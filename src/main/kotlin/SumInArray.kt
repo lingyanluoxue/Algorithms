@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
 //    val result = twoSum(intArrayOf(2, 7, 11, 15), 9)
-    val result = twoSum(intArrayOf(3, 2,4), 6)
+    val result = twoSum(intArrayOf(3, 2, 4), 6)
     print("[${result[0]},${result[1]}]")
 }
 
