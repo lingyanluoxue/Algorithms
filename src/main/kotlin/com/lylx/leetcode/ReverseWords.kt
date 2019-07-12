@@ -1,3 +1,5 @@
+package com.lylx.leetcode
+
 fun main(args: Array<String>) {
     println(reverseWords("Let's take LeetCode contest"))
     println(reverseWords2("Let's take LeetCode contest"))

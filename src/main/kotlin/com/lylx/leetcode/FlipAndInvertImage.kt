@@ -1,3 +1,5 @@
+package com.lylx.leetcode
+
 fun main(args: Array<String>) {
     print(1 and 0)
 }

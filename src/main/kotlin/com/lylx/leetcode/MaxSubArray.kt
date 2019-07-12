@@ -1,3 +1,5 @@
+package com.lylx.leetcode
+
 fun main(args: Array<String>) {
     val nums = args.map {
         it.toInt()

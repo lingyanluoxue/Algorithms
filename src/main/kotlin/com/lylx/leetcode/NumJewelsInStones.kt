@@ -1,3 +1,5 @@
+package com.lylx.leetcode
+
 fun main(args: Array<String>) {
     println(numJewelsInStones("aA", "aAAbbbb"))
     println(numJewelsInStones("z", "ZZ"))
