@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
  * 内存消耗31.3 MB
  */
 fun hammingDistance(x: Int, y: Int): Int {
-    // 位异或 : 只要位不同结果为1，不然结果为0
+    // 异或 : 只要位不同结果为1，不然结果为0
     val value = x xor  y
     // 输出一个数二进制表示的1的数量
     return Integer.bitCount(value)
