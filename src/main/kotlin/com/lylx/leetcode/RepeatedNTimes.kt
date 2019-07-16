@@ -23,7 +23,7 @@ fun main(args: Array<String>) {
  * 输入：[5,1,5,2,5,3,5,4]
  * 输出：5
  *
- * 提示：
+ * 说明：
  *     a. 4 <= A.length <= 10000
  *     b. 0 <= A[i] < 10000
  *     c. A.length 为偶数

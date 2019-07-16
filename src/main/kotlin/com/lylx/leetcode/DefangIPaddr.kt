@@ -17,8 +17,7 @@ fun main(args: Array<String>) {
  * 输入：address = "255.100.50.0"
  * 输出："255[.]100[.]50[.]0"
  *
- * 提示：
- *     a. 给出的 address 是一个有效的 IPv4 地址
+ * @param address 一个有效的 IPv4 地址
  */
 fun defangIPaddr(address: String): String {
     return address.replace(".","[.]")

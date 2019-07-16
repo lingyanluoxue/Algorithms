@@ -3,7 +3,6 @@ package com.lylx.leetcode
 fun main(args: Array<String>) {
     println(numJewelsInStones("aA", "aAAbbbb"))
     println(numJewelsInStones("z", "ZZ"))
-    println(toLowerCase("loVEly"))
 }
 
 /**
@@ -27,13 +26,4 @@ fun numJewelsInStones(J: String, S: String): Int {
     return S.count {
         J.contains(it)
     }
-}
-
-/**
- * 大写字母转小写字母
- *
- * 将字符串中的大写字母转换成小写字母，之后返回新的字符串。
- */
-fun toLowerCase(str: String): String {
-    return str.toLowerCase()
 }

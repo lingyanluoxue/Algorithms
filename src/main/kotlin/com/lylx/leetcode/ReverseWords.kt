@@ -13,6 +13,10 @@ fun main(args: Array<String>) {
  * 输入: "Let's take LeetCode contest"
  * 输出: "s'teL ekat edoCteeL tsetnoc"
  */
+
+/**
+ * 内存消耗：453.7 MB
+ */
 private fun reverseWords(s: String): String {
     val str = s.split(" ")
     var result = ""
@@ -26,6 +30,8 @@ private fun reverseWords(s: String): String {
 }
 
 /**
+ * 内存消耗：54.7 MB
+ *
  * 1. s.split(" ") 使用空字符串分割字符串：[Let's, take, LeetCode, contest]
  * 2. joinToString(" "){it.reversed}：反转 list 的每个元素并使用空字符串[分隔符]分割 list 所有元素创建 String 字符串
  */
@@ -36,6 +42,8 @@ private fun reverseWords2(s: String): String {
 }
 
 /**
+ * 内存消耗：53.4 MB
+ *
  * 1. s.reversed() 反转字符串 s：tsetnoc edoCteeL ekat s'teL
  * 2. split(" ") 使用空字符串分割字符串：[tsetnoc, edoCteeL, ekat, s'teL]
  * 3. reversed() 反转 list： [s'teL, ekat, edoCteeL, tsetnoc]
