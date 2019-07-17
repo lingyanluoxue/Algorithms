@@ -19,6 +19,17 @@ fun deleteNode(node: ListNode) {
     node.next = node.next!!.next
 }
 
+
+/**
+ * 删除链表中等于给定值 val 的所有节点。
+ *
+ * 示例：
+ * 输入: 1->2->6->3->4->5->6, val = 6
+ * 输出: 1->2->3->4->5
+ */
+/**
+ * 内存消耗：40.6 MB
+ */
 fun removeElements(head: ListNode?, value: Int): ListNode? {
     if (head == null) {
         return null
@@ -30,16 +41,32 @@ fun removeElements(head: ListNode?, value: Int): ListNode? {
         if (currentNode.value != value) {
             previousNode = currentNode
         } else {
-            if (currentNode == headNode){
+            if (currentNode == headNode) {
                 headNode = currentNode.next
                 previousNode = currentNode.next
-            }else{
+            } else {
                 previousNode?.next = currentNode.next
             }
         }
         currentNode = currentNode.next
     }
     return headNode
+}
+
+/**
+ * 递归
+ * 内存消耗：40.7 MB
+ */
+fun removeElements2(head: ListNode?, value: Int): ListNode? {
+    if (head == null)
+        return null
+
+    head.next = removeElements2(head.next, value)
+    return if (head.value == value) {
+        head.next
+    } else {
+        head
+    }
 }
 
 fun main(args: Array<String>) {
@@ -63,6 +90,8 @@ fun main(args: Array<String>) {
 
     displayLinkList(removeElements(node1, 6))
     displayLinkList(removeElements(node11, 1))
+    displayLinkList(removeElements2(node1, 6))
+    displayLinkList(removeElements2(node11, 1))
 }
 
 fun displayLinkList(head: ListNode?) {
