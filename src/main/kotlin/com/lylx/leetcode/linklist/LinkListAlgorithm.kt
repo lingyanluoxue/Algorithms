@@ -30,7 +30,7 @@ fun removeElements(head: ListNode?, value: Int): ListNode? {
         if (currentNode.value != value) {
             previousNode = currentNode
         } else {
-            if (currentNode == head){
+            if (currentNode == headNode){
                 headNode = currentNode.next
                 previousNode = currentNode.next
             }else{
@@ -61,8 +61,8 @@ fun main(args: Array<String>) {
     val node12 = ListNode(1)
     node11.next = node12
 
-    val node = removeElements(node11, 1)
-    displayLinkList(node)
+    displayLinkList(removeElements(node1, 6))
+    displayLinkList(removeElements(node11, 1))
 }
 
 fun displayLinkList(head: ListNode?) {
@@ -74,4 +74,5 @@ fun displayLinkList(head: ListNode?) {
             print(" -> ")
         }
     }
+    println()
 }
