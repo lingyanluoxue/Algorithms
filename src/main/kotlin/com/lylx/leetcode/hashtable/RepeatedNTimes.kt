@@ -1,12 +1,12 @@
-package com.lylx.leetcode
+package com.lylx.leetcode.hashtable
 
 fun main(args: Array<String>) {
-    println(repeatedNTimes(intArrayOf(1,2,3,3)))
-    println(repeatedNTimes(intArrayOf(2,1,2,5,3,2)))
-    println(repeatedNTimes(intArrayOf(5,1,5,2,5,3,5,4)))
-    println(repeatedNTimes2(intArrayOf(1,2,3,3)))
-    println(repeatedNTimes2(intArrayOf(2,1,2,5,3,2)))
-    println(repeatedNTimes2(intArrayOf(5,1,5,2,5,3,5,4)))
+    println(repeatedNTimes(intArrayOf(1, 2, 3, 3)))
+    println(repeatedNTimes(intArrayOf(2, 1, 2, 5, 3, 2)))
+    println(repeatedNTimes(intArrayOf(5, 1, 5, 2, 5, 3, 5, 4)))
+    println(repeatedNTimes2(intArrayOf(1, 2, 3, 3)))
+    println(repeatedNTimes2(intArrayOf(2, 1, 2, 5, 3, 2)))
+    println(repeatedNTimes2(intArrayOf(5, 1, 5, 2, 5, 3, 5, 4)))
 }
 
 /**

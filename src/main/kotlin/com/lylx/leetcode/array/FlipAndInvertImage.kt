@@ -1,4 +1,4 @@
-package com.lylx.leetcode
+package com.lylx.leetcode.array
 
 fun main(args: Array<String>) {
     print(1 and 0)

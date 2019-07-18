@@ -1,4 +1,4 @@
-package com.lylx.leetcode
+package com.lylx.leetcode.string
 
 fun main(args: Array<String>) {
     println(toLowerCase("loVEly"))
