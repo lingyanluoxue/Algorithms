@@ -1,4 +1,4 @@
-package com.lylx.leetcode.hashtable
+package com.lylx.algorithm.hashtable
 
 fun main(args: Array<String>) {
     println(numJewelsInStones("aA", "aAAbbbb"))

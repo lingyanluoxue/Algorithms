@@ -1,4 +1,4 @@
-package com.lylx.leetcode
+package com.lylx.algorithm
 
 fun main(args: Array<String>) {
     println(defangIPaddr("1.1.1.1"))

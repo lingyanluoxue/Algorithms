@@ -1,4 +1,4 @@
-package com.lylx.leetcode.array
+package com.lylx.algorithm.array
 
 fun main(args: Array<String>) {
 //    val result = twoSum(intArrayOf(2, 7, 11, 15), 9)

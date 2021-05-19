@@ -1,4 +1,4 @@
-package com.lylx.leetcode.array
+package com.lylx.algorithm.array
 
 /**
  * 移动零

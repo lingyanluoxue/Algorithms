@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-group 'com.lylx.leetcode'
+group 'com.lylx.algorithm'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

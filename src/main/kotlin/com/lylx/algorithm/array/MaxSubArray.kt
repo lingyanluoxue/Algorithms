@@ -1,4 +1,4 @@
-package com.lylx.leetcode.array
+package com.lylx.algorithm.array
 
 fun main(args: Array<String>) {
     val nums = args.map {

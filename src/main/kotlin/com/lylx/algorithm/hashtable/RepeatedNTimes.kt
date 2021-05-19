@@ -1,4 +1,4 @@
-package com.lylx.leetcode.hashtable
+package com.lylx.algorithm.hashtable
 
 fun main(args: Array<String>) {
     println(repeatedNTimes(intArrayOf(1, 2, 3, 3)))
